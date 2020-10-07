@@ -5,4 +5,8 @@ class Restaurant
     @opening_time = opening_time
     @name = name
   end
+
+  def opening_time
+    @opening_time
+  end
 end
