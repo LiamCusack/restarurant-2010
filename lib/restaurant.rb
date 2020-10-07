@@ -5,7 +5,7 @@ class Restaurant
     @opening_time = opening_time
     @name = name
     @dishes = []
-    @closing_time = closing_time
+    @closing_time = ()
   end
 
   def opening_time
@@ -17,10 +17,12 @@ class Restaurant
   end
 
   def dishes
-    @dishes 
+    @dishes
   end
 
-
+  def closing_time(int)
+  @closing_time = (int + @opening_time.to_i).to_s + ":00"
+  end 
 
   def add_dish(dish)
     @dishes << dish
