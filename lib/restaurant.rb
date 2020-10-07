@@ -9,4 +9,8 @@ class Restaurant
   def opening_time
     @opening_time
   end
+
+  def name
+    @name
+  end
 end
